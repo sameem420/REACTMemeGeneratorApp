@@ -4,7 +4,7 @@ function Header() {
     return (
         <header>
             <img 
-                src="http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png" 
+                src="https://i.ibb.co/8mkZ00b/Trollface.png" 
                 alt="Troll Face"
                 width="150"
             />
