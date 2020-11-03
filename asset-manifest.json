@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/REACTMemeGeneratorApp/static/css/main.89fd9895.chunk.css",
+    "main.css": "/REACTMemeGeneratorApp/static/css/main.b066c706.chunk.css",
     "main.js": "/REACTMemeGeneratorApp/static/js/main.882f0290.chunk.js",
     "main.js.map": "/REACTMemeGeneratorApp/static/js/main.882f0290.chunk.js.map",
     "runtime-main.js": "/REACTMemeGeneratorApp/static/js/runtime-main.d3b99629.js",
@@ -10,13 +10,13 @@
     "static/js/3.3b6cbf7e.chunk.js": "/REACTMemeGeneratorApp/static/js/3.3b6cbf7e.chunk.js",
     "static/js/3.3b6cbf7e.chunk.js.map": "/REACTMemeGeneratorApp/static/js/3.3b6cbf7e.chunk.js.map",
     "index.html": "/REACTMemeGeneratorApp/index.html",
-    "static/css/main.89fd9895.chunk.css.map": "/REACTMemeGeneratorApp/static/css/main.89fd9895.chunk.css.map",
+    "static/css/main.b066c706.chunk.css.map": "/REACTMemeGeneratorApp/static/css/main.b066c706.chunk.css.map",
     "static/js/2.7c9b3e88.chunk.js.LICENSE.txt": "/REACTMemeGeneratorApp/static/js/2.7c9b3e88.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d3b99629.js",
     "static/js/2.7c9b3e88.chunk.js",
-    "static/css/main.89fd9895.chunk.css",
+    "static/css/main.b066c706.chunk.css",
     "static/js/main.882f0290.chunk.js"
   ]
 }
