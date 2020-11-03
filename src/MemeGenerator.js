@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
 import * as htmlToImage from 'html-to-image';
-import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
 import FileSaver from 'file-saver';
 
 class MemeGenerator extends React.Component {
