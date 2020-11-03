@@ -1,5 +1,9 @@
 import React from 'react';
 import './style.css';
+import * as htmlToImage from 'html-to-image';
+import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
+import FileSaver from 'file-saver';
+
 class MemeGenerator extends React.Component {
     constructor() {
         super();
@@ -36,7 +40,12 @@ class MemeGenerator extends React.Component {
         const randMemeImg = this.state.allMemeImages[randNum].url;
         this.setState({ randomImage: randMemeImg });
     }
-
+    download() {
+        htmlToImage.toPng(document.getElementById('memeImg'))
+        .then(function (dataUrl) {
+            download(dataUrl, 'my-node.png');
+        });
+    }
     render() {
         return (
             <div>
@@ -45,11 +54,12 @@ class MemeGenerator extends React.Component {
                     <input type="text" name="bottomText" value={this.state.bottomText} onChange={this.changeHandler} />   
                     <button>Generate</button>
                 </form>
-                <div className="meme">
-                    <img src={this.state.randomImage} alt="" />
+                <div className="meme" >
+                    <img id="memeImg" src={this.state.randomImage} alt="" />
                     <h2 className="top">{this.state.topText}</h2>
                     <h2 className="bottom">{this.state.bottomText}</h2>
                 </div>
+                <button onClick={this.download}>Display</button>
             </div>
         );
     };
