@@ -6,7 +6,7 @@ function Header() {
             <img 
                 src="http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png" 
                 alt="Troll Face"
-                width="200"
+                width="150"
             />
             <p>Meme Generator</p>
         </header>

@@ -49,16 +49,18 @@ class MemeGenerator extends React.Component {
         return (
             <div>
                 <form className="meme-form" onSubmit={this.submitHandler}>
-                    <input type="text" name="topText" value={this.state.topText} onChange={this.changeHandler} />
-                    <input type="text" name="bottomText" value={this.state.bottomText} onChange={this.changeHandler} />   
+                    <input type="text" name="topText" placeholder="Top Text" value={this.state.topText} onChange={this.changeHandler} />
+                    <input type="text" name="bottomText" placeholder="Bottom Text" value={this.state.bottomText} onChange={this.changeHandler} />   
                     <button>Generate</button>
                 </form>
+                <div id="downloadSection">
+                    <button id="btnDownloadMeme" onClick={this.downloadMeme}>Download Meme</button>
+                </div>
                 <div className="meme" id="memeImg">
                     <img src={this.state.randomImage} alt="" />
                     <h2 className="top">{this.state.topText}</h2>
                     <h2 className="bottom">{this.state.bottomText}</h2>
                 </div>
-                <button onClick={this.downloadMeme}>Download Meme</button>
             </div>
         );
     };
